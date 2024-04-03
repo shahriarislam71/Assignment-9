@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container{
-    @apply sm:max-w-xl lg:max-w-screen-lg mx-auto
+    @apply sm:max-w-xl lg:max-w-screen-xl mx-auto
 }
 
 .fonts{
@@ -14,5 +14,5 @@
     @apply font-bold tracking-wide text-indigo-700 hover:bg-gradient-to-r from-indigo-200 to-indigo-500 p-3 rounded 
 }
 .default{
-    @apply font-semibold tracking-wide text-gray-700 hover:bg-gradient-to-r from-indigo-200 to-indigo-500
+    @apply font-semibold tracking-wide text-gray-700 hover:bg-gradient-to-r from-indigo-200 to-indigo-500 p-3 rounded
 }

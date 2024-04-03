@@ -5,7 +5,9 @@ import { Outlet } from 'react-router-dom';
 const App = () => {
   return (
     <div>
-      <Nav></Nav>
+      <div className='backgrondd'>
+        <Nav></Nav>
+      </div>
       <Outlet></Outlet>
     </div>
   );
