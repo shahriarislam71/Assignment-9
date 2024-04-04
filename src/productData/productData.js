@@ -4,3 +4,4 @@ export const productData = async()=>{
     const showdata = await data.json()
     return {showdata}
 }
+

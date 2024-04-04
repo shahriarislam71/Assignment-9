@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FeatureData = ({ pd }) => {
     const { id, companyName, logo, type, employeePost, salary,
@@ -19,7 +20,7 @@ const FeatureData = ({ pd }) => {
                 <p>{location}</p>
                 <p>Salary : {salary}k</p>
             </div>
-            <button className='btn'>View Details</button>
+            <Link to = {`/jobDetails/${id}`}><button className='btn'>View Details</button></Link>
         </div>
     );
 };
