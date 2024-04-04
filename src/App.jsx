@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Nav from './component/nav/Nav';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 
+export const Productcontext = createContext([])
 const App = () => {
+  const {showdata} = useLoaderData()
+  // console.log(showdata)
   return (
-    <div>
+    <Productcontext.Provider value = {showdata}>
       <div className='backgrondd'>
         <Nav></Nav>
       </div>
       <Outlet></Outlet>
-    </div>
+    </Productcontext.Provider>
   );
 };
 

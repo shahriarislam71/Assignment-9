@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Home.css'
+import { Productcontext } from '../../App';
+import FeatureData from '../featuredata/FeatureData';
 
 const Home = () => {
+    const data = useContext(Productcontext || [])
+    console.log(data)
     return (
         <>
             <div className='  backgrondd'>
@@ -19,7 +23,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-36'>
+            {/* Job Category List */}
+            <div className='mt-10 md:mt-36'>
                 <h1 className='text-center text-bold md:text-5xl font-semibold md:font-extrabold'>Job Category List</h1>
                 <p className='text-center mt-6 text-gray-500 px-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='flex flex-col md:flex-row my-container px-5 justify-between mb-4 mt-8 rounded-lg gap-5'>
@@ -45,6 +50,18 @@ const Home = () => {
                     </div>
                 </div>
 
+            </div>
+            {/* Featured Jobs */}
+            <div className='mt-10 md:mt-36'>
+                <h1 className='text-center text-bold md:text-5xl font-semibold md:font-extrabold'>Featured Jobs</h1>
+                <p className='text-center mt-6 text-gray-500 px-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className=' grid grid-cols-1 md:grid-cols-2 mt-8 my-container px-5 gap-4'>
+                    {data.map (pd => <FeatureData key ={pd.id} pd = {pd}></FeatureData>)}
+                </div>
+            </div>
+            {/* see all button  */}
+            <div className='flex justify-center mt-10 md:mt-20'>
+                <button className='btn'>See All Jobs</button>
             </div>
         </>
     );
