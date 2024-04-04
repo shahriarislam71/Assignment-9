@@ -12,12 +12,12 @@ const FeatureData = ({ pd }) => {
             <h1 className='text-2xl font-extrabold pt-8 pb-4'>{employeePost}</h1>
             <p className='text-gray-600'>{companyName}</p>
             <div className='gap-4 flex pt-4 pb-4'>
-                <button className='border-2 px-5 py-1'>{type}</button>
-                <button className='border-2 px-5 py-1'>Full Time</button>
+                <button className='border-2 px-5 py-1 border-indigo-500 text-indigo-500 rounded'>{type}</button>
+                <button className='border-2 px-5 py-1 border-indigo-500 text-indigo-500 rounded'>Full Time</button>
             </div>
             <div className='flex gap-5 mb-4'>
                 <p>{location}</p>
-                <p>Salary : {salary}</p>
+                <p>Salary : {salary}k</p>
             </div>
             <button className='btn'>View Details</button>
         </div>
