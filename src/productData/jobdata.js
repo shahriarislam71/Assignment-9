@@ -5,6 +5,6 @@ export const Jobdetailsdata = async(id) =>{
     const showdata = await data.json() 
     // console.log(showdata)
     const newdata = showdata.find(pd => pd.id === parseInt(id))
-    console.log(newdata)
+    // console.log(newdata)
     return {newdata}
 }

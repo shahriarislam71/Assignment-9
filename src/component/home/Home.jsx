@@ -9,7 +9,7 @@ const Home = () => {
     const [jobState, setjobstate] = useState(false)
     const [newData, setnewData] = useState(data.slice(0, 4))
     const [jobBtnState, setJobBtn] = useState(false)
-    console.log(newData)
+    // console.log(newData)
     if (jobState) {
         setnewData(data.slice(0, 10))
         setjobstate(false)

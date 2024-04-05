@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const FeatureData = ({ pd }) => {
     const { id, companyName, logo, type, employeePost, salary,
         location } = pd
-    console.log(location)
+    // console.log(location)
     return (
         <div className='border-2 h-96 max-w-screen-lg overflow-hidden pl-10 pt-10 rounded'>
             <div className=''>
