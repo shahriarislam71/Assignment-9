@@ -6,7 +6,7 @@ const JobApplied = ({ job }) => {
     const { id, logo, companyName, employeePost, type, salary, location } = job
     return (
         <>
-            <div className='flex justify-between mt-8 items-center border-2 p-4 mb-7'>
+            <div className='flex flex-col md:flex-row justify-between mt-8 items-center border-2 p-4 mb-7'>
                 <div className='flex items-center gap-8'>
                     <div className='w-56 '>
                         <img className='object-cover' src={logo} alt="" />
